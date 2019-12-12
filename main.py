@@ -14,7 +14,6 @@ def convert(num):
         return getLetter(num)
     if num < 676:
         result = num // 26
-        print (result)
         return getLetter(result) + getLetter(num)
     result1 = num // 26
     result2 = result1 // 26
