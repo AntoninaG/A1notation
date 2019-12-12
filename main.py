@@ -7,9 +7,13 @@ def getLetter(num):
 
 # Принимает номер столбца в качестве аргумента и
 # возвращает имя столбца как в Экселе.
-    
-    
 def convert(num):
+    if num < 26:
+        return getLetter(num)
+    return convert(num // 26) + getLetter(num)
+
+    
+def convert_old(num):
     if num < 26:
         return getLetter(num)
     if num < 676:

@@ -18,6 +18,7 @@ class A1NotationTest(unittest.TestCase):
         self.assertEqual(convert(26), 'BA')
         self.assertEqual(convert(27), 'BB')
         self.assertEqual(convert(28), 'BC')
+        self.assertEqual(convert(29), 'BD')
         self.assertEqual(convert(51), 'BZ')
         self.assertEqual(convert(52), 'CA')
         self.assertEqual(convert(675), 'ZZ')
